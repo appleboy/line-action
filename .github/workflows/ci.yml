@@ -15,9 +15,10 @@ jobs:
         room: ${{ secrets.room }}
         args: line message from GitHub Actions ${{ github.event_name }} event.
 
-    - name: send default message
+    - name: send custom message
       uses: appleboy/line-action@master
       with:
         secret: ${{ secrets.secret }}
         token: ${{ secrets.token }}
         room: ${{ secrets.room }}
+        message: "test from GitHub Actions"
