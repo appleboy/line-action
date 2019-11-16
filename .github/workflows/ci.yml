@@ -18,5 +18,6 @@ jobs:
     - name: send default message
       uses: appleboy/line-action@master
       with:
-        webhook_id: ${{ secrets.WEBHOOK_ID }}
-        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
