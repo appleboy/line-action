@@ -26,3 +26,17 @@ jobs:
         room: ${{ secrets.room }}
         args: line message from GitHub Actions ${{ github.event_name }} event.
 ```
+
+### Example
+
+send location message:
+
+```yaml
+    - name: send location message
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        locations: "竹北體育館::新竹縣竹北市::24.834687::120.993368"
+```

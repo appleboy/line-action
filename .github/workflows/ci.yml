@@ -30,3 +30,27 @@ jobs:
         token: ${{ secrets.token }}
         room: ${{ secrets.room }}
         locations: "竹北體育館::新竹縣竹北市::24.834687::120.993368"
+
+    - name: send sticker message
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        stickers: "1::1::100"
+
+    - name: send audio message
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        stickers: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+
+    - name: send video message
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        stickers: "http://techslides.com/demos/sample-videos/small.mp4"
