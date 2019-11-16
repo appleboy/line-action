@@ -1,0 +1,22 @@
+name: line message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send custom message with args
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        args: line message from GitHub Actions ${{ github.event_name }} event.
+
+    - name: send default message
+      uses: appleboy/line-action@master
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
