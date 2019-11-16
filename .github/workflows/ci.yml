@@ -39,6 +39,14 @@ jobs:
         room: ${{ secrets.room }}
         stickers: "1::1::100"
 
+    - name: send image message
+      uses: appleboy/line-action@master
+      with:
+        secret: ${{ secrets.secret }}
+        token: ${{ secrets.token }}
+        room: ${{ secrets.room }}
+        stickers: "https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-128.png"
+
     - name: send audio message
       uses: appleboy/line-action@master
       with:
