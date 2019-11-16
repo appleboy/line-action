@@ -14,6 +14,16 @@ inputs:
     description: 'line group ID'
   message:
     description: 'the message contents'
+  images:
+    description: 'line images'
+  videos:
+    description: 'line videos'
+  audios:
+    description: 'line audios'
+  stickers:
+    description: 'line stickers'
+  locations:
+    description: 'line locations'
 runs:
   using: 'docker'
   image: 'Dockerfile'
