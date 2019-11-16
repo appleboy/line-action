@@ -61,4 +61,4 @@ jobs:
         secret: ${{ secrets.secret }}
         token: ${{ secrets.token }}
         room: ${{ secrets.room }}
-        videos: "http://techslides.com/demos/sample-videos/small.mp4"
+        videos: "https://cuts.diamond.mlb.com/FORGE/2019/2019-09/28/ee8d662f-8984c7b1-2fc40a58-csvm-diamondx64-asset_1280x720_59_4000K.mp4"
