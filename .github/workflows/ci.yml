@@ -53,7 +53,7 @@ jobs:
         secret: ${{ secrets.secret }}
         token: ${{ secrets.token }}
         room: ${{ secrets.room }}
-        audios: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        audios: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3::20"
 
     - name: send video message
       uses: appleboy/line-action@master
