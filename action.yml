@@ -1,4 +1,4 @@
-name: 'Line Message Notify'
+name: 'LINE Message Notify'
 description: 'Sending a Line message'
 author: 'Bo-Yi Wu'
 inputs:

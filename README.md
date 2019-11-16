@@ -1,4 +1,4 @@
-# 🚀 Line for GitHub Actions
+# 🚀 LINE for GitHub Actions
 
 [GitHub Action](https://developer.github.com/actions/) for sending a [Line](https://developers.line.biz/en/docs/messaging-api/overview/) message.
 
