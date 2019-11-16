@@ -24,6 +24,8 @@ inputs:
     description: 'line stickers'
   locations:
     description: 'line locations'
+  delimiter:
+    description: 'line delimiter, default is ::'
 runs:
   using: 'docker'
   image: 'Dockerfile'
