@@ -1,5 +1,7 @@
 name: line message
-on: [push]
+on:
+  push:
+    branches: [master]
 jobs:
 
   build:
